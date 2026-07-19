@@ -1,0 +1,50 @@
+{
+   "action": {
+      "default_icon": "src/assets/logo/favicon-128.png",
+      "default_popup": "src/pages/popup/index.html"
+   },
+   "author": {
+      "email": "fbesuit@gmail.com",
+      "name": "William Chen"
+   },
+   "background": {
+      "service_worker": "service-worker-loader.js",
+      "type": "module"
+   },
+   "content_scripts": [ {
+      "js": [ "assets/index.ts-loader-B1WHt08g.js" ],
+      "matches": [ "https://www.facebook.com/*", "https://web.facebook.com/*", "https://*.esuit.dev/*" ],
+      "run_at": "document_end"
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_description__",
+   "externally_connectable": {
+      "matches": [ "https://www.facebook.com/*", "https://web.facebook.com/*", "https://*.esuit.dev/*" ]
+   },
+   "host_permissions": [ "https://www.facebook.com/*", "https://web.facebook.com/*", "https://*.esuit.dev/*" ],
+   "icons": {
+      "128": "src/assets/logo/favicon-128.png",
+      "16": "src/assets/logo/favicon-16.png",
+      "19": "src/assets/logo/favicon-19.png",
+      "32": "src/assets/logo/favicon-32.png",
+      "38": "src/assets/logo/favicon-38.png",
+      "48": "src/assets/logo/favicon-48.png"
+   },
+   "incognito": "not_allowed",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnOUaZ0ZqQRBjWrv9hGgCv1tIgeZTewDdWmLrdgMFZXbLXcDvTzS4Ey8B+0C6JRiKXXmf3Y79nTPuhDvclI3U7pFTPuzkf67DeV/hIhX07DZUCNPV4gP7YiQU1yCnioMB+4fTRnNPE8Xc3qp+ev2nDfeiL4Cw8IWFLgiK6oCPikAxh+KqP/5uLC5iBLjaDCLKxwsUbwJCCXXS8/PDUQKHtxUgJ1xd9kEd/HpikW/l3tGJeSTyJ4hYr/NL7ZHYO4PbgIDXkOEQ8oV9gn0CMmxtZoy7CiE3MSi5B2WI/DVg0K74mtm/j6dkkuBwHTtOO+rajFb0KQpLZZBnryrVY6KVJwIDAQAB",
+   "manifest_version": 3,
+   "minimum_chrome_version": "103",
+   "name": "__MSG_name__",
+   "optional_host_permissions": [ "\u003Call_urls>" ],
+   "optional_permissions": [ "activeTab" ],
+   "options_page": "src/pages/options/index.html",
+   "permissions": [ "scripting", "storage", "downloads", "downloads.ui", "declarativeNetRequest" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.19.3",
+   "version_name": "2.19.3",
+   "web_accessible_resources": [ {
+      "matches": [ "https://*.esuit.dev/*", "https://web.facebook.com/*", "https://www.facebook.com/*" ],
+      "resources": [ "*", "assets/const-E3FWmUxA.js", "assets/index.ts-BMuaNn1h.js" ],
+      "use_dynamic_url": false
+   } ]
+}

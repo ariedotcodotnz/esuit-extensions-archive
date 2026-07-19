@@ -1,0 +1,1 @@
+import{p as r}from"./const-D_HoJBVL.js";function d(o,s){chrome.runtime.onMessage.addListener((a,c)=>{a.from===o&&window.postMessage({from:a.from,payload:a.payload,callbackId:a.callbackId},"*")})}d(r);

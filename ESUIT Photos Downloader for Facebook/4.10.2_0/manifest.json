@@ -1,0 +1,48 @@
+{
+   "action": {
+      "default_icon": "src/assets/logo/favicon-128.png",
+      "default_popup": "src/pages/popup/index.html"
+   },
+   "author": {
+      "email": "fbesuit@gmail.com",
+      "name": "William Chen"
+   },
+   "background": {
+      "service_worker": "service-worker-loader.js",
+      "type": "module"
+   },
+   "content_scripts": [ {
+      "js": [ "assets/index.ts-loader-CjMzjcqg.js" ],
+      "matches": [ "https://www.facebook.com/*", "https://web.facebook.com/*", "https://*.esuit.dev/*" ],
+      "run_at": "document_end"
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_description__",
+   "externally_connectable": {
+      "matches": [ "https://www.facebook.com/*", "https://web.facebook.com/*", "https://*.esuit.dev/*" ]
+   },
+   "host_permissions": [ "https://www.facebook.com/*", "https://web.facebook.com/*", "https://*.esuit.dev/*" ],
+   "icons": {
+      "128": "src/assets/logo/favicon-128.png",
+      "16": "src/assets/logo/favicon-16.png",
+      "19": "src/assets/logo/favicon-19.png",
+      "32": "src/assets/logo/favicon-32.png",
+      "38": "src/assets/logo/favicon-38.png",
+      "48": "src/assets/logo/favicon-48.png"
+   },
+   "incognito": "not_allowed",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAh8HmCInN9DjqTMQdQZwPpMG9ky8fUICEY5YaPoLtfgbkqWac7XSmqgEMqcreQ2pbhGLa55FOGk1QO4pE4zR1lA1PUgpxyquoK7Sds1ILmzDIwCNY3JRAGhuUroImUhMcSVdWmHIzYAOgE3BMM/GviuBB06v0B/YqJ8aVP3t8uWG70cIIrBDHKsX56/R2rZUuLhktweYA9U4un/cBCeB7U9i9VJJyQXSpa0JZQhjiabTfsW4cNWO2gtlx6zgKvIUWtCFZjSEBBbjs/ehfEIWQ1YZhnU+Efu6ABg0He0fwhFp6CFUWsCt9MrGUDb3UPotSjplDaUlqh2tIbUsMNMSR6QIDAQAB",
+   "manifest_version": 3,
+   "minimum_chrome_version": "103",
+   "name": "__MSG_name__",
+   "options_page": "src/pages/options/index.html",
+   "permissions": [ "scripting", "storage", "declarativeNetRequest" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "4.10.2",
+   "version_name": "4.10.2",
+   "web_accessible_resources": [ {
+      "matches": [ "https://*.esuit.dev/*", "https://web.facebook.com/*", "https://www.facebook.com/*" ],
+      "resources": [ "*", "assets/const-D_HoJBVL.js", "assets/index.ts-CSjdHHrT.js" ],
+      "use_dynamic_url": false
+   } ]
+}

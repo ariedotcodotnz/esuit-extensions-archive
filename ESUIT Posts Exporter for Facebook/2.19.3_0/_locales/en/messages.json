@@ -1,0 +1,8 @@
+{
+   "description": {
+      "message": "Bulk-export Facebook posts from profiles, groups & search results. Stream to server via webhook for CRM, database, or automation."
+   },
+   "name": {
+      "message": "ESUIT | Posts Exporter for Facebook™"
+   }
+}

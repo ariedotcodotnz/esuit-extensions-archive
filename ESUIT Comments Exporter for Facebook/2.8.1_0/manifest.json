@@ -1,0 +1,44 @@
+{
+   "action": {
+      "default_icon": "src/assets/logo/favicon-128.png",
+      "default_popup": "src/pages/popup/index.html"
+   },
+   "author": {
+      "email": "fbesuit@gmail.com",
+      "name": "William Chen"
+   },
+   "background": {
+      "service_worker": "service-worker-loader.js",
+      "type": "module"
+   },
+   "default_locale": "en",
+   "description": "__MSG_description__",
+   "externally_connectable": {
+      "matches": [ "https://www.facebook.com/*", "https://web.facebook.com/*", "https://*.esuit.dev/*" ]
+   },
+   "host_permissions": [ "https://www.facebook.com/*", "https://web.facebook.com/*", "https://*.esuit.dev/*" ],
+   "icons": {
+      "128": "src/assets/logo/favicon-128.png",
+      "16": "src/assets/logo/favicon-16.png",
+      "19": "src/assets/logo/favicon-19.png",
+      "32": "src/assets/logo/favicon-32.png",
+      "38": "src/assets/logo/favicon-38.png",
+      "48": "src/assets/logo/favicon-48.png"
+   },
+   "incognito": "not_allowed",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjsJryG3YBUhmBYRtejscsQ+5IiZYLqqvfHJ2Pm1E6GtWL45FmR2TbAaVRwB28AHpQpWoAW51J7WsEv8qsf87nrVpt94uL0XxcDDTdiSR824QzHhVFW0UG72IFqjpAbzw0ITaIeF3viPvJjPsArxb1pHXQD2J9F4e/swhxy+ln66M9WR7hFcQQFimZhGXIfLTED2X6Gg2896HC7ZkAa1p013eDFu5Jmdc/YSa1LulTFsZZtJQlJz4DzVhZ0h8/3WUqTaFgnObTA/mL77d9ET40z6iOHN0HrrRzgroaegBl0Haz3pTLTwtbGdLxY1SqARd+EJrhCk4T9LkYUNEzwZKJwIDAQAB",
+   "manifest_version": 3,
+   "minimum_chrome_version": "103",
+   "name": "__MSG_name__",
+   "optional_host_permissions": [ "https://*/*" ],
+   "options_page": "src/pages/options/index.html",
+   "permissions": [ "scripting", "storage", "declarativeNetRequest" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.8.1",
+   "version_name": "2.8.1",
+   "web_accessible_resources": [ {
+      "matches": [ "https://*.esuit.dev/*", "https://web.facebook.com/*", "https://www.facebook.com/*" ],
+      "resources": [ "*" ],
+      "use_dynamic_url": false
+   } ]
+}

@@ -1,0 +1,48 @@
+{
+   "action": {
+      "default_icon": "src/assets/logo/favicon-128.png",
+      "default_popup": "src/pages/popup/index.html"
+   },
+   "author": {
+      "email": "fbesuit@gmail.com",
+      "name": "William Chen"
+   },
+   "background": {
+      "service_worker": "service-worker-loader.js",
+      "type": "module"
+   },
+   "content_scripts": [ {
+      "js": [ "assets/index.ts-loader-CPLeSQV3.js" ],
+      "matches": [ "https://www.instagram.com/*", "https://*.esuit.dev/*" ],
+      "run_at": "document_end"
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_description__",
+   "externally_connectable": {
+      "matches": [ "https://www.instagram.com/*", "https://*.esuit.dev/*" ]
+   },
+   "host_permissions": [ "https://www.instagram.com/*", "https://*.esuit.dev/*" ],
+   "icons": {
+      "128": "src/assets/logo/favicon-128.png",
+      "16": "src/assets/logo/favicon-16.png",
+      "19": "src/assets/logo/favicon-19.png",
+      "32": "src/assets/logo/favicon-32.png",
+      "38": "src/assets/logo/favicon-38.png",
+      "48": "src/assets/logo/favicon-48.png"
+   },
+   "incognito": "not_allowed",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArodfTcY66Zh8uhSWLkk0qOBi3k4uSp47VX53od52+H7e8GtgGDfaeTriRDCpeCcnkgpH0sbnp1omiMo5Hh/P+lVbaY6w8X6fi0wv37PNsZHHpbGJKxkuQg0KyH6GenFmf2BeUU/H9DBH33oHbCWMBiJ8Z+0xqNj4LJXpPpjn+1OijZgrH5nicaeXfSCOwuTS0KFWnj8L3hJykpZNgMi0z/xII2fpZIa6qsY70vtD1DLJsj28Fu+TS3BdJ34FlgUo/Qcdifj7fAr9EbYdaK752J9fTZnaFLyj5S4H7WI/irWiblDGTz7dSIuFqVlIQdDdYhcEhPLN+uqEcQPYf5w2bQIDAQAB",
+   "manifest_version": 3,
+   "minimum_chrome_version": "103",
+   "name": "__MSG_name__",
+   "options_page": "src/pages/options/index.html",
+   "permissions": [ "scripting", "storage", "downloads", "downloads.ui", "declarativeNetRequest", "contextMenus" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.13.2",
+   "version_name": "3.13.2",
+   "web_accessible_resources": [ {
+      "matches": [ "https://*.esuit.dev/*", "https://www.instagram.com/*" ],
+      "resources": [ "*", "assets/const-DewCs8rR.js", "assets/index.ts-BYWds_Pm.js" ],
+      "use_dynamic_url": false
+   } ]
+}
