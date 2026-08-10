@@ -1,3 +1,5 @@
+
+
 # ESUIT Extensions Archive
 
 An unofficial archive of discontinued ESUIT browser extensions for digital preservation, technical documentation, security research, and historical reference.
@@ -31,6 +33,9 @@ This is an archival repository. It is not an official continuation of ESUIT and 
 The files in this repository are unpacked production extension distributions.
 
 They contain the HTML, CSS, JavaScript, manifests, translations, icons, and other resources distributed to users. Much of the JavaScript has been compiled, bundled, minified, or otherwise transformed from the original development source.
+
+> [!NOTE]
+> Each `manifest.json` specifies `host_permissions` and `externally_connectable` matches for `https://*.esuit.dev/*`. As the ESUIT service is discontinued, requests to this domain will fail, which may affect functionality dependent on server-side authentication or license verification.
 
 This repository therefore does **not** necessarily contain the original:
 
