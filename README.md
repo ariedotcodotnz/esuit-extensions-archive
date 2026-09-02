@@ -25,6 +25,7 @@ This is an archival repository. It is not an official continuation of ESUIT and 
 | ESUIT Photos Downloader for Instagram | Instagram |         `3.13.2` |
 | ESUIT Posts Exporter for Facebook     | Facebook  |         `2.19.3` |
 | ESUIT Video Downloader for Facebook   | Facebook  |          `2.9.2` |
+| ESUIT Un Seen for Facebook            | 1.13.0_0  |         `1.13.0` |
 
 ## Important source-code distinction
 
